@@ -1,0 +1,73 @@
+:root{
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.main{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: 
+    "main"
+    "buy"
+    "image1"
+    "about"
+    "image2";
+}
+
+.main_hero{
+    min-height: 500px;
+    background-image: url(../images/desktop-image-hero-1.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: main;
+}
+
+.main_nav{
+    display: flex;
+}
+
+.main_links{
+    display: none;
+}
+
+.main_logo{
+    margin: 0 auto;
+}
+
+.main_controls{
+    grid-area: main;
+    align-self: end;
+    justify-self: end;
+    background-color: var(--black);
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_arrows{
+    height: 40%;
+}
