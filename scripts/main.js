@@ -26,9 +26,9 @@ changeInfo()
 
 arrows[0].addEventListener('click', (e) => {
     e.preventDefault()
-    info = info + 1
-    if (info > 2) 
-        info = 0
+    info = info - 1
+    if (info < 0) 
+        info = 2
 
     changeInfo()
 })
