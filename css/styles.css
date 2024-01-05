@@ -64,8 +64,21 @@ body{
     display: flex;
     width: 100px;
     height: 50px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+.main_arrow_container{
+    height: 100%;
+    width: 50%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_arrow_container:hover{
+    background-color: var(--dark-gray);
 }
 
 .main_arrows{
@@ -106,6 +119,10 @@ body{
     letter-spacing: 4px;
 }
 
+.main_cta:hover{
+    color: var(--dark-gray);
+}
+
 .main_arrow{
     margin-left: 20px;
 }
@@ -135,6 +152,7 @@ body{
     }
 
     .main{
+        width: 100%;
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas: 
         "main main main main buy buy buy"
